@@ -1,6 +1,6 @@
 # docker-shells
 
-docker-shells is a collection of shells inside docker containers. You can use shells with various versions and various os images.
+docker-shells is a collection of shells inside docker containers. You can use shells with various versions and variouse os images.
 
 # Supported platforms (at now)
 
@@ -37,6 +37,27 @@ All debian image is based on \*-slim.
 | posh | x | x | | | | |
 | yash | x | x | | | | |
 
-# AUTHOR
 
-Okadarien Saru okadas[at]tanban.org
+# Usage
+
+```
+$ echo cat /etc/os-release | docker run -i okadash/bash:debian-bullseye-slim
+PRETTY_NAME="Debian GNU/Linux bullseye/sid"
+NAME="Debian GNU/Linux"
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+```
+
+```
+$ docker run -it okadash/bash:centos7
+$ cat anaconda-post.log | grep -E \^\ \+Erasing | wc -l
+25
+```
+
+```
+$ cat some_awesome_posix_shell_script.sh | okadash/dash
+```
+
+See also [Github repo](https://github.com/okadash/docker-shells).
