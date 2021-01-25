@@ -1,0 +1,5 @@
+FROM archlinux/base:latest
+RUN ln -sfv bash /bin/sh
+RUN useradd -m shells
+USER shells
+CMD ["/bin/sh"]

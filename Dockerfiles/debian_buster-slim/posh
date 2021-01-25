@@ -1,0 +1,8 @@
+FROM debian:buster-slim
+RUN apt-get update -y
+RUN apt-get install -y posh
+RUN apt-get clean all -y
+RUN ln -sfv /usr/bin/posh /bin/sh
+RUN useradd -m shells
+USER shells
+CMD ["/bin/sh"]

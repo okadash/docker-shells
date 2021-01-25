@@ -1,0 +1,4 @@
+FROM debian:bullseye-slim
+RUN useradd -m shells
+USER shells
+CMD ["/bin/sh"]

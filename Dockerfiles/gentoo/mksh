@@ -1,0 +1,7 @@
+FROM gentoo/stage3-amd64:latest
+RUN echo MAKEOPTS=-j4 >> /etc/portage/make.conf
+RUN echo GENTOO_MIRRORS=https://ftp.iij.ad.jp/pub/linux/gentoo >> /etc/portage/make.conf
+RUN emerge-webrsync
+RUN emerge --newuse --update --deep --with-bdeps=y --jobs 3 app-shells/mksh
+RUN ln -sfv mksh /bin/sh
+CMD ["/bin/sh"]

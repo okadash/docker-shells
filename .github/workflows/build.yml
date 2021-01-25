@@ -1,0 +1,43 @@
+name: archlinux
+
+on:
+  push:
+    # Publish `master` as Docker image.
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+env:
+  LOGIN_NAME: okadash
+
+jobs:
+
+  # Build and push image to DockerHub.
+  push_image:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Log into registry
+        run: echo "${{ secrets.DOCKERHUB_SECRET }}" | docker login --username ${LOGIN_NAME:?no LOGIN_NAME} --password-stdin
+
+      - name: Build and push shells images
+        run: |
+          DOCKER_PUSHING=1 ./build_image.sh
+  build_image:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Log into registry
+        run: echo "${{ secrets.DOCKERHUB_SECRET }}" | docker login --username ${LOGIN_NAME:?no LOGIN_NAME} --password-stdin
+
+      - name: Build and push shells images
+        run: |
+          ./build_image.sh

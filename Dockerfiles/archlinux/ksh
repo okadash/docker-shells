@@ -1,0 +1,8 @@
+FROM archlinux/base:latest
+RUN pacman -Syy
+RUN pacman -Sy --noconfirm ksh
+RUN pacman -Sc --noconfirm
+RUN ln -svf ksh /bin/sh
+RUN useradd -m shells
+USER shells
+CMD ["/bin/sh"]

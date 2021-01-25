@@ -1,0 +1,5 @@
+FROM debian:buster-slim
+RUN ln -sfv bash /bin/sh
+RUN useradd -m shells
+USER shells
+CMD ["/bin/sh"]

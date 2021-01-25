@@ -1,0 +1,5 @@
+FROM gentoo/stage3-amd64:latest
+RUN ln -sfv bash /bin/sh
+RUN useradd -m shells
+USER shells
+CMD ["/bin/sh"]
