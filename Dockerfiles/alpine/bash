@@ -1,0 +1,7 @@
+FROM alpine:latest
+RUN apk update
+RUN apk add bash
+RUN adduser shells || echo skipped
+RUN ln -sfv bash /bin/sh
+USER shells
+CMD ["/bin/sh"]

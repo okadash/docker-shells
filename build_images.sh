@@ -8,12 +8,12 @@ esac
 
 build_atomic(){
   ${JUST_SAYING:+echo} docker build -t "${docker_user:+$docker_user/}${shell}:${baseimg:?baseimg corrupted}" -f $1 .
-  [ "${baseimg}" = debian-buster-slim ] && ${JUST_SAYING:+echo} docker tag "${docker_user:+$docker_user/}${shell}:${baseimg}" ${docker_user:+$docker_user/}${shell}:latest || return 0
+  [ "${baseimg}" = buster-slim ] && ${JUST_SAYING:+echo} docker tag "${docker_user:+$docker_user/}${shell}:${baseimg}" ${docker_user:+$docker_user/}${shell}:latest || return 0
 }
 
 push_atomic(){
   [ docker_user != localhost ] && ${JUST_SAYING:+echo} docker push ${docker_user:+$docker_user/}${shell}:${baseimg}
-  [ "${baseimg}" = debian-buster-slim ] && ${JUST_SAYING:+echo} docker push ${docker_user:+$docker_user/}${shell}:latest || return 0
+  [ "${baseimg}" = buster-slim ] && ${JUST_SAYING:+echo} docker push ${docker_user:+$docker_user/}${shell}:latest || return 0
 }
 
 main(){

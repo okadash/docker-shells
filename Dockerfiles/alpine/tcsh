@@ -1,0 +1,7 @@
+FROM alpine:latest
+RUN apk update
+RUN apk add tcsh
+RUN adduser shells || echo skipped
+RUN ln -sfv tcsh /bin/sh
+USER shells
+CMD ["/bin/sh"]

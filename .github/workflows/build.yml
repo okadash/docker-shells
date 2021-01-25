@@ -5,10 +5,10 @@ on:
     # Publish `master` as Docker image.
     branches:
       - master
-      - test
   pull_request:
     branches:
       - master
+      - dev
 
 env:
   DOCKER_USERNAME: okadash
@@ -28,7 +28,7 @@ jobs:
 
       - name: check build script and make command line output
         run: |
-          JUST_SAYING=1 ./build_image.sh
+          JUST_SAYING=1 ./build_images.sh
 
   # Build and push image to DockerHub.
   push_image:
@@ -43,4 +43,4 @@ jobs:
 
       - name: Build and ship docker images
         run: |
-          DOCKER_PUSHING=1 ./build_image.sh
+          DOCKER_PUSHING=1 ./build_images.sh

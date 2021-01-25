@@ -1,6 +1,7 @@
 FROM centos:7
 RUN yum update -y
 RUN yum install -y tcsh
+RUN yum clean all -y 
 RUN useradd -m shells
 RUN ln -sfv /usr/bin/tcsh /bin/sh
 USER shells
