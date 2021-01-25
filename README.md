@@ -1,10 +1,8 @@
-docker-shells
-
-# WHAT
+# docker-shells
 
 docker-shells is a collection of shells inside docker containers. You can use shells with various versions and variouse os images.
 
-# Supported platform (at now)
+# Supported platforms (at now)
 
 * amd64
 * docker (tested on >=19.0)
@@ -22,16 +20,16 @@ docker-shells is a collection of shells inside docker containers. You can use sh
 | zsh | Mit-like license | |
 | yash | GPLv2 | only for debian |
 
-## base image support
+## base images
 
-All debian image based on \*-slim.
+All debian image is based on \*-slim.
 
-| name | buster | bullseye | archlinux | gentoo |
+| shell \\ image | buster | bullseye | archlinux | gentoo |
 | --- | --- | --- | --- | --- |
 | bash | x | x | x | x |
 | dash | x | x | x | x |
 | busybox sh | x | x | x | x |
-| ksh-99 | x | | x | |
+| ksh-93 | x | | x | |
 | ksh-2020 | | x | x | |
 | mksh | x | x | x | x |
 | tcsh | x | x | x | x |
