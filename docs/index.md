@@ -25,7 +25,7 @@ docker-shells is a collection of shells inside docker containers. You can use sh
 | name | buster | bullseye | archlinux | gentoo | centos:7 | centos:8 | alpine |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | bash | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/gentoo?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/centos7?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/centos8?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/alpine?label=) |
-| dash | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/gentoo?label=) | | | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/alpine?label=) |
+| dash | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/gentoo?label=) | | | |
 | busybox sh | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/busybox/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/busybox/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/busybox/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/busybox/gentoo?label=) | | | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/busybox/alpine?label=) |
 | ksh-93 | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/debian-buster-slim?label=) | | | | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/centos7?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/centos8?label=) |
 | ksh-2020 | | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/archlinux?label=) | | | |
@@ -52,6 +52,16 @@ DOCKER_USERNAME=localimage ./build_images.sh
 
 # Usage
 
+1. Simply attaching tty
+
+```
+$ docker run -it okadash/bash:centos7
+$ cat anaconda-post.log | grep -E \^\ \+Erasing | wc -l
+25
+```
+
+2. Redirect
+
 ```
 $ echo cat /etc/os-release | docker run -i okadash/bash:bullseye
 PRETTY_NAME="Debian GNU/Linux bullseye/sid"
@@ -62,11 +72,7 @@ SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
 ```
 
-```
-$ docker run -it okadash/bash:centos7
-$ cat anaconda-post.log | grep -E \^\ \+Erasing | wc -l
-25
-```
+3. Bulk redirect
 
 ```
 $ cat some_awesome_posix_shell_script.sh | docker run -i okadash/dash
