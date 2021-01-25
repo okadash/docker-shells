@@ -3,13 +3,13 @@ docker_user=${DOCKER_USERNAME:-localhost}
 cd Dockerfiles
 
 build_atomic(){
-  docker build -t "${docker_user:+$docker_user/}${shell}:${baseimg:?baseimg corrupted}" -f $1 .
+  ${JUST_SAYING:+echo} docker build -t "${docker_user:+$docker_user/}${shell}:${baseimg:?baseimg corrupted}" -f $1 .
   [ "${baseimg}" = debian-buster-slim ] && docker tag "${docker_user:+$docker_user/}${shell}:${baseimg}" ${docker_user:+$docker_user/}${shell}:latest || return 0
 }
 
 push_atomic(){
-  [ docker_user != localhost ] && docker push ${docker_user:+$docker_user/}${shell}:${baseimg}
-  [ "${baseimg}" = debian-buster-slim ] && docker push ${docker_user:+$docker_user/}${shell}:latest || return 0
+  [ docker_user != localhost ] && ${JUST_SAYING:+echo} docker push ${docker_user:+$docker_user/}${shell}:${baseimg}
+  [ "${baseimg}" = debian-buster-slim ] && ${JUST_SAYING:+echo} docker push ${docker_user:+$docker_user/}${shell}:latest || return 0
 }
 
 for i in */*; do

@@ -5,18 +5,18 @@ on:
     # Publish `master` as Docker image.
     branches:
       - master
+      - test
   pull_request:
     branches:
       - master
 
 env:
   DOCKER_USERNAME: okadash
-  
 
 jobs:
 
-  # Build images to DockerHub.
-  build_image:
+  # Check action of the build script and workflow
+  check_build_script:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
 
@@ -28,7 +28,7 @@ jobs:
 
       - name: check shells images build
         run: |
-          ./build_image.sh
+          JUST_SAYING=1 ./build_image.sh
 
   # Build and push image to DockerHub.
   push_image:
