@@ -31,7 +31,7 @@ docker pull okadash/ksh:buster
 
 ## target / image size comparison
 
-| shell \\ image | buster | bullseye | archlinux | gentoo | centos:7 | centos:8 | alpine |
+| name | buster | bullseye | archlinux | gentoo | centos:7 | centos:8 | alpine |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | bash | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/gentoo?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/centos7?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/centos8?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/bash/alpine?label=) |
 | dash | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/gentoo?label=) | | | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/dash/alpine?label=) |
