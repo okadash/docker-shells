@@ -1,7 +1,7 @@
 FROM centos:8
 RUN yum update -y
 RUN yum install -y tcsh
-RUN ln -sfv /usr/bin/tcsh /bin/sh
 RUN useradd -m shells
+RUN ln -sfv /usr/bin/tcsh /bin/sh
 USER shells
 CMD ["/bin/sh"]
