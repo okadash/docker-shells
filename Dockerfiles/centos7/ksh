@@ -1,6 +1,7 @@
 FROM centos:7
 RUN yum update -y
 RUN yum install -y ksh
+RUN yum clean all -y 
 RUN ln -sfv /usr/bin/ksh /bin/sh
 RUN useradd -m shells
 USER shells
