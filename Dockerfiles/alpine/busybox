@@ -1,0 +1,5 @@
+FROM alpine:latest
+RUN adduser shells || echo skipped
+RUN ln -sfv busybox /bin/sh
+USER shells
+CMD ["/bin/sh"]
