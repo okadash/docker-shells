@@ -25,7 +25,7 @@ docker-shells is a collection of shells inside docker containers. You can use sh
 All debian image is based on \*-slim.
 
 | shell \\ image | buster | bullseye | archlinux | gentoo | centos:7 | centos:8 |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- |
 | bash | x | x | x | x | x | x |
 | dash | x | x | x | x | | |
 | busybox sh | x | x | x | x | | |
