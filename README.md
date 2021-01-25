@@ -1,6 +1,6 @@
-# docker-shells
+# About
 
-docker-shells is a collection of shells inside docker containers. You can use shells with various versions and various os images.
+**[docker-shells](https://okadash.github.io/docker-shells/)** is a collection of shells inside docker containers. You can use shells with various versions and various os images.
 
 # Supported platforms (at now)
 

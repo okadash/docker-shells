@@ -37,11 +37,31 @@ All debian image is based on \*-slim.
 | posh | x | x | | | | |
 | yash | x | x | | | | |
 
+# Docker images
+
+bash  https://hub.docker.com/repository/docker/okadash/bash
+
+dash  https://hub.docker.com/repository/docker/okadash/dash
+
+busybox sh  https://hub.docker.com/repository/docker/okadash/busybox
+
+ksh-93 & ksh-2020  https://hub.docker.com/repository/docker/okadash/ksh
+
+mksh   https://hub.docker.com/repository/docker/okadash/mksh
+
+tcsh  https://hub.docker.com/repository/docker/okadash/tcsh
+
+zsh  https://hub.docker.com/repository/docker/okadash/zsh
+
+posh  https://hub.docker.com/repository/docker/okadash/posh
+
+yash  https://hub.docker.com/repository/docker/okadash/yash
+
 
 # Usage
 
 ```
-$ echo cat /etc/os-release | docker run -i okadash/bash:debian-bullseye-slim
+$ echo cat /etc/os-release | docker run -i okadash/bash:bullseye
 PRETTY_NAME="Debian GNU/Linux bullseye/sid"
 NAME="Debian GNU/Linux"
 ID=debian
@@ -60,4 +80,4 @@ $ cat anaconda-post.log | grep -E \^\ \+Erasing | wc -l
 $ cat some_awesome_posix_shell_script.sh | okadash/dash
 ```
 
-See also [Github repo](https://github.com/okadash/docker-shells).
+See also our [Github repo](https://github.com/okadash/docker-shells).
