@@ -5,10 +5,10 @@ on:
     # Publish `master` as Docker image.
     branches:
       - master
-      - test
   pull_request:
     branches:
       - master
+      - dev
 
 env:
   DOCKER_USERNAME: okadash
