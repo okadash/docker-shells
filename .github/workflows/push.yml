@@ -1,4 +1,4 @@
-name: build_and_check
+name: check_and_push
 
 on:
   push:
@@ -11,10 +11,10 @@ on:
 
 jobs:
 
-  # Build images to DockerHub.
-  build_image:
+  # Build and push image to DockerHub.
+  push_image:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'push'
 
     steps:
       - uses: actions/checkout@v2
@@ -24,4 +24,4 @@ jobs:
 
       - name: Build and push shells images
         run: |
-          ./build_image.sh
+          DOCKER_PUSHING=1 ./build_image.sh
