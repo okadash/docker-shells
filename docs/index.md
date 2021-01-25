@@ -39,23 +39,24 @@ All debian image is based on \*-slim.
 
 # Docker images
 
-bash  https://hub.docker.com/repository/docker/okadash/bash
+Following docker images are built on and pushed from this repository.
 
-dash  https://hub.docker.com/repository/docker/okadash/dash
+`[okadash/bash](https://hub.docker.com/repository/docker/okadash/bash)`
+`[okadash/dash](https://hub.docker.com/repository/docker/okadash/dash)`
+`[okadash/busybox sh](https://hub.docker.com/repository/docker/okadash/busybox)`
+`[okadash/ksh](https://hub.docker.com/repository/docker/okadash/ksh)`
+`[okadash/mksh](https://hub.docker.com/repository/docker/okadash/mksh)`
+`[okadash/tcsh](https://hub.docker.com/repository/docker/okadash/tcsh)`
+`[okadash/zsh](https://hub.docker.com/repository/docker/okadash/zsh)`
+`[okadash/posh](https://hub.docker.com/repository/docker/okadash/posh)`
+`[okadash/yash](https://hub.docker.com/repository/docker/okadash/yash)`
 
-busybox sh  https://hub.docker.com/repository/docker/okadash/busybox
+If you need to build your own images, set DOCKER_USERNAME environmental variables and run build_images.sh.
 
-ksh-93 & ksh-2020  https://hub.docker.com/repository/docker/okadash/ksh
-
-mksh   https://hub.docker.com/repository/docker/okadash/mksh
-
-tcsh  https://hub.docker.com/repository/docker/okadash/tcsh
-
-zsh  https://hub.docker.com/repository/docker/okadash/zsh
-
-posh  https://hub.docker.com/repository/docker/okadash/posh
-
-yash  https://hub.docker.com/repository/docker/okadash/yash
+```
+cd path_to_this_repo
+DOCKER_USERNAME=localimage ./build_images.sh
+```
 
 
 # Usage
@@ -77,7 +78,7 @@ $ cat anaconda-post.log | grep -E \^\ \+Erasing | wc -l
 ```
 
 ```
-$ cat some_awesome_posix_shell_script.sh | okadash/dash
+$ cat some_awesome_posix_shell_script.sh | docker run -i okadash/dash
 ```
 
 See also our [Github repo](https://github.com/okadash/docker-shells).
