@@ -1,8 +1,8 @@
 #!/bin/sh -e
 
 case "$1" in
--x) set -o xtrace;
--v) set -o verbose;
+-x) set -o xtrace;;
+-v) set -o verbose;;
 *) :;;
 esac
 
