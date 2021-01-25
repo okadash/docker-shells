@@ -29,7 +29,7 @@ All debian image is based on \*-slim.
 | bash | x | x | x | x | x | x |
 | dash | x | x | x | x | | |
 | busybox sh | x | x | x | x | | |
-| ksh-93 | x | | | | | x |
+| ksh-93 | x | | | | x | x |
 | ksh-2020 | | x | x | | | |
 | mksh | x | x | x | x | x | x |
 | tcsh | x | x | x | x | x | x |
