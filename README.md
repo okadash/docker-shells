@@ -12,13 +12,13 @@ docker-shells is a collection of shells inside docker containers. You can use sh
 
 | name | license | tested condition |
 | --- | --- | --- |
-| bash | GPLv3 |
-| dash | 3-clause BSD |
-| busybox sh | GPLv2 |
-| ksh | EPL-1.0 | ksh-93 for debian:buster, ksh-2020 for others |
-| mksh | MirOS licence + 3-clause BSD | 
-| zsh | Mit-like license | |
-| yash | GPLv2 | only for debian |
+| bash | GPLv3 | manual |
+| dash | 3-clause BSD | manual |
+| busybox sh | GPLv2 | manual |
+| ksh | EPL-1.0 | manual |
+| mksh | MirOS licence + 3-clause BSD | manual |
+| zsh | Mit-like license | manual |
+| yash | GPLv2 | manual |
 
 ## base images
 
