@@ -52,6 +52,16 @@ DOCKER_USERNAME=localimage ./build_images.sh
 
 # Usage
 
+1. Simply attaching tty
+
+```
+$ docker run -it okadash/bash:centos7
+$ cat anaconda-post.log | grep -E \^\ \+Erasing | wc -l
+25
+```
+
+2. Redirect
+
 ```
 $ echo cat /etc/os-release | docker run -i okadash/bash:bullseye
 PRETTY_NAME="Debian GNU/Linux bullseye/sid"
@@ -62,11 +72,7 @@ SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
 ```
 
-```
-$ docker run -it okadash/bash:centos7
-$ cat anaconda-post.log | grep -E \^\ \+Erasing | wc -l
-25
-```
+3. Bulk redirect
 
 ```
 $ cat some_awesome_posix_shell_script.sh | docker run -i okadash/dash
