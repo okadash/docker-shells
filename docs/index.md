@@ -1,4 +1,4 @@
-# docker-shells
+# About
 
 docker-shells is a collection of shells inside docker containers. You can use shells with various versions and variouse os images.
 
