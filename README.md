@@ -24,15 +24,15 @@ docker-shells is a collection of shells inside docker containers. You can use sh
 
 All debian image is based on \*-slim.
 
-| shell \\ image | buster | bullseye | archlinux | gentoo |
+| shell \\ image | buster | bullseye | archlinux | gentoo | centos:7 | centos:8 |
 | --- | --- | --- | --- | --- |
-| bash | x | x | x | x |
-| dash | x | x | x | x |
-| busybox sh | x | x | x | x |
-| ksh-93 | x | | x | |
-| ksh-2020 | | x | x | |
-| mksh | x | x | x | x |
-| tcsh | x | x | x | x |
-| zsh | x | x | x | x |
-| posh | x | x | | | 
-| yash | x | x | | | 
+| bash | x | x | x | x | x | x |
+| dash | x | x | x | x | | |
+| busybox sh | x | x | x | x | | |
+| ksh-93 | x | | x | | x | x |
+| ksh-2020 | | x | x | | | |
+| mksh | x | x | x | x | x | x |
+| tcsh | x | x | x | x | x | x |
+| zsh | x | x | x | x | x | x |
+| posh | x | x | | | | |
+| yash | x | x | | | | |
