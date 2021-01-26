@@ -6,4 +6,6 @@ RUN emerge --newuse --update --jobs 3 app-shells/zsh
 RUN useradd -m shells
 RUN ln -sfv zsh /bin/sh
 USER shells
+RUN touch /home/shells/.zshrc
+ENV SH=/usr/bin/zsh
 CMD ["/bin/sh"]

@@ -4,4 +4,6 @@ RUN apk add zsh
 RUN adduser shells || echo skipped
 RUN ln -sfv zsh /bin/sh
 USER shells
+RUN touch /home/shells/.zshrc
+ENV SH=/bin/zsh
 CMD ["/bin/sh"]
