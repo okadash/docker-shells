@@ -18,7 +18,6 @@ docker-shells is a collection of shells inside docker containers. You can use sh
 | ksh | EPL-1.0 | manual |
 | mksh | MirOS licence + 3-clause BSD | manual |
 | zsh | Mit-like license | manual |
-| yash | GPLv2 | manual |
 
 ## base images
 
@@ -35,7 +34,6 @@ All debian image is based on \*-slim.
 | tcsh | x | x | x | x | x | x |
 | zsh | x | x | x | x | x | x |
 | posh | x | x | | | | |
-| yash | x | x | | | | |
 
 # Docker images
 
@@ -49,7 +47,6 @@ Following docker images are built on and pushed from this repository.
 `[okadash/tcsh](https://hub.docker.com/repository/docker/okadash/tcsh)`
 `[okadash/zsh](https://hub.docker.com/repository/docker/okadash/zsh)`
 `[okadash/posh](https://hub.docker.com/repository/docker/okadash/posh)`
-`[okadash/yash](https://hub.docker.com/repository/docker/okadash/yash)`
 
 If you need to build your own images, set DOCKER_USERNAME environmental variables and run build_images.sh.
 

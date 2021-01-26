@@ -21,7 +21,6 @@ All docker images can be pulled from [DockerHub](https://hub.docker.com/u/okadas
 | ksh | EPL-1.0 | manual |
 | mksh | MirOS licence + 3-clause BSD | manual |
 | zsh | Mit-like license | manual |
-| yash | GPLv2 | manual |
 
 ## get images
 
@@ -42,7 +41,6 @@ docker pull okadash/ksh:buster
 | tcsh | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/gentoo?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/centos7?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/centos8?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/alpine?label=) |
 | zsh | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/gentoo?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/centos7?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/centos8?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/mksh/centos8?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/alpine?label=) |
 | posh | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/posh/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/posh/debian-bullseye-slim?label=) | | | | |
-| yash | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/yash/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/yash/debian-bullseye-slim?label=) | | | | |
 
 * All debian image is based on \*-slim.
 
