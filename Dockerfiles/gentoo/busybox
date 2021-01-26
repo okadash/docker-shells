@@ -1,5 +1,6 @@
 FROM gentoo/stage3-amd64:latest
 RUN useradd -m shells
 RUN ln -sfv busybox /bin/busybox
+ENV SH=/bin/busybox
 USER shells
 CMD ["/bin/sh"]

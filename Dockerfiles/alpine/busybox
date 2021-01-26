@@ -2,4 +2,5 @@ FROM alpine:latest
 RUN adduser shells || echo skipped
 RUN ln -sfv busybox /bin/sh
 USER shells
+ENV SH=/bin/busybox
 CMD ["/bin/sh"]

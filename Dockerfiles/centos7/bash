@@ -3,4 +3,5 @@ RUN yum update -y
 RUN yum clean all -y 
 RUN useradd -m shells
 USER shells
+ENV SH=/bin/bash
 CMD ["/bin/sh"]

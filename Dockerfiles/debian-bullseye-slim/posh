@@ -4,5 +4,6 @@ RUN apt-get install -y posh
 RUN apt-get clean all -y
 RUN ln -sfv /usr/bin/posh /bin/sh
 RUN useradd -m shells
+ENV SH=/usr/bin/posh
 USER shells
 CMD ["/bin/sh"]

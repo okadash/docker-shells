@@ -3,5 +3,7 @@ RUN apt-get update -y
 RUN apt-get install -y tcsh
 RUN apt-get clean all -y
 RUN useradd -m shells
+RUN ln -sfv tcsh /bin/sh
+ENV SH=/bin/tcsh
 USER shells
 CMD ["/bin/sh"]

@@ -4,4 +4,5 @@ RUN apk add bash
 RUN adduser shells || echo skipped
 RUN ln -sfv bash /bin/sh
 USER shells
+ENV SH=/bin/bash
 CMD ["/bin/sh"]

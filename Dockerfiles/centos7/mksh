@@ -4,5 +4,6 @@ RUN yum install -y mksh
 RUN yum clean all -y 
 RUN ln -sfv /usr/bin/mksh /bin/sh
 RUN useradd -m shells
+ENV SH=/usr/bin/mksh
 USER shells
 CMD ["/bin/sh"]

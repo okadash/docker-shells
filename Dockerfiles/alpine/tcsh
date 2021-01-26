@@ -3,5 +3,6 @@ RUN apk update
 RUN apk add tcsh
 RUN adduser shells || echo skipped
 RUN ln -sfv tcsh /bin/sh
+ENV SH=/bin/tcsh
 USER shells
 CMD ["/bin/sh"]
