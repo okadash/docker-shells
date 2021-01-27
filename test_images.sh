@@ -1,0 +1,1 @@
+ci/scripts/test_images.sh
