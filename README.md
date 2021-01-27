@@ -1,6 +1,6 @@
 # About
 
-**[docker-shells](https://okadash.github.io/docker-shells/)** is a collection of shells inside docker containers. You can use shells with various versions and various os images.
+**[docker-shells](https://okadash.github.io/docker-shells/)** is a collection of shells inside docker containers. You can use shells with various versions on latest os images.
 
 All docker images can be pulled from [DockerHub](https://hub.docker.com/u/okadash) and each image has /bin/sh as a symbolic link for target shells (bash, dash, ksh, busybox, etc.).
 
@@ -29,6 +29,7 @@ docker pull okadash/ksh:buster
 | ksh | EPL-1.0 | manual |
 | mksh | MirOS licence + 3-clause BSD | manual |
 | zsh | Mit-like license | manual |
+| posh | GPLv2 | manual |
 
 ## target / image size comparison
 
@@ -40,7 +41,7 @@ docker pull okadash/ksh:buster
 | ksh-93 | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/debian-buster-slim?label=) | | | | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/centos7?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/centos8?label=) |
 | ksh-2020 | | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/ksh/archlinux?label=) | | | |
 | mksh | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/mksh/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/mksh/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/mksh/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/mksh/gentoo?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/mksh/centos7?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/mksh/centos8?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/mksh/alpine?label=) |
-| tcsh | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/gentoo?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/centos7?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/centos8?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/alpine?label=) |
+| tcsh | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/gentoo?label=) | | | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/tcsh/alpine?label=) |
 | zsh | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/debian-bullseye-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/archlinux?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/gentoo?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/centos7?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/centos8?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/mksh/centos8?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/zsh/alpine?label=) |
 | posh | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/posh/debian-buster-slim?label=) | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/okadash/posh/debian-bullseye-slim?label=) | | | | |
 
