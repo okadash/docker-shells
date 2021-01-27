@@ -1,6 +1,6 @@
 #!/bin/sh
 SHELLSPEC_VERSION="0.28.1"
-SHELLSPEC_DIR="shellspec"
+SHELLSPEC_DIR="ci/test/shellspec"
 TESTLOG_DIR="ci/test/log"
 DOCKERFILE_DIR="Dockerfiles"
 
