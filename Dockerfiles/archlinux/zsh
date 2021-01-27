@@ -5,4 +5,6 @@ RUN pacman -Sc --noconfirm
 RUN useradd -m shells
 RUN ln -svf /usr/bin/zsh /bin/sh 
 USER shells
+RUN touch /home/shells/.zshrc
+ENV SH=/usr/bin/zsh
 CMD ["/bin/sh"]

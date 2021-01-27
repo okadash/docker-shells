@@ -5,5 +5,6 @@ RUN emerge-webrsync
 RUN emerge --newuse --update --deep --with-bdeps=y --jobs 3 app-shells/mksh
 RUN useradd -m shells
 RUN ln -sfv mksh /bin/sh
+ENV SH=/bin/mksh
 USER shells
 CMD ["/bin/sh"]

@@ -1,8 +1,0 @@
-FROM debian:bullseye-slim
-RUN apt-get update -y
-RUN apt-get install -y yash
-RUN apt-get clean all -y
-RUN ln -sfv /usr/bin/yash /bin/sh
-RUN useradd -m shells
-USER shells
-CMD ["/bin/sh"]

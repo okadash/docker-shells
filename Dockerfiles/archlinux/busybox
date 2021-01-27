@@ -4,5 +4,6 @@ RUN pacman -Sy --noconfirm busybox
 RUN pacman -Sc --noconfirm
 RUN ln -svf /usr/sbin/busybox /bin/sh
 RUN useradd -m shells
+ENV SH=/usr/sbin/busybox
 USER shells
 CMD ["/bin/sh"]

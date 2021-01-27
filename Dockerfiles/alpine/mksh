@@ -3,5 +3,6 @@ RUN apk update
 RUN apk add mksh
 RUN adduser shells || echo skipped
 RUN ln -sfv mksh /bin/sh
+ENV SH=/bin/mksh
 USER shells
 CMD ["/bin/sh"]

@@ -4,5 +4,6 @@ RUN pacman -Sy --noconfirm mksh
 RUN pacman -Sc --noconfirm
 RUN useradd -m shells
 RUN ln -svf mksh /bin/sh
+ENV SH=/bin/mksh
 USER shells
 CMD ["/bin/sh"]

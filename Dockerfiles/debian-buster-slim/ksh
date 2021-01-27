@@ -3,5 +3,7 @@ RUN apt-get update -y
 RUN apt-get install -y ksh
 RUN apt-get clean all -y
 RUN useradd -m shells
+RUN ln -sfv ksh93 /bin/sh
+ENV SH=/bin/ksh93
 USER shells
 CMD ["/bin/sh"]

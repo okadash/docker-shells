@@ -3,5 +3,7 @@ RUN apt-get update -y
 RUN apt-get install -y mksh
 RUN apt-get clean all -y
 RUN useradd -m shells
+RUN ln -sfv mksh /bin/sh
+ENV SH=/bin/mksh
 USER shells
 CMD ["/bin/sh"]

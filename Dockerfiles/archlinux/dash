@@ -3,5 +3,7 @@ RUN pacman -Syy
 RUN pacman -Sy --noconfirm dash
 RUN pacman -Sc --noconfirm
 RUN useradd -m shells
+RUN ln -sfv dash /bin/sh
+ENV SH=/bin/dash
 USER shells
 CMD ["/bin/sh"]

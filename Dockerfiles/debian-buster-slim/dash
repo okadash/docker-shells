@@ -1,4 +1,5 @@
 FROM debian:buster-slim
 RUN useradd -m shells
+ENV SH=/bin/bash
 USER shells
 CMD ["/bin/sh"]

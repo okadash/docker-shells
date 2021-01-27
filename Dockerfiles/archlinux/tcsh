@@ -1,8 +1,9 @@
 FROM archlinux/base:latest
 RUN pacman -Syy
-RUN pacman -Sy --noconfirm ksh
+RUN pacman -Sy --noconfirm tcsh
 RUN pacman -Sc --noconfirm
 RUN useradd -m shells
 RUN ln -svf /usr/sbin/tcsh /bin/sh
+ENV SH=/usr/sbin/tcsh
 USER shells
 CMD ["/bin/sh"]

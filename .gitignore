@@ -1,0 +1,5 @@
+*~
+.*.swp
+*.tap
+ci/test/shellspec
+ci/test/log/*
