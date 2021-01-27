@@ -28,6 +28,7 @@ docker pull okadash/ksh:buster
 | busybox sh | GPLv2 | manual |
 | ksh | EPL-1.0 | manual |
 | mksh | MirOS licence + 3-clause BSD | manual |
+| tcsh | 3-clause BSD | manual |
 | zsh | Mit-like license | manual |
 | posh | GPLv2 | manual |
 
